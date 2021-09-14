@@ -1,0 +1,15 @@
+F:\VS\Fiscode\bin\Debug\Gendeer.exe.config
+F:\VS\Fiscode\bin\Debug\Gendeer.exe
+F:\VS\Fiscode\bin\Debug\Gendeer.pdb
+F:\VS\Fiscode\obj\Debug\Fiscode.csprojAssemblyReference.cache
+F:\VS\Fiscode\obj\Debug\MainWindow.g.cs
+F:\VS\Fiscode\obj\Debug\App.g.cs
+F:\VS\Fiscode\obj\Debug\Gendeer_MarkupCompile.cache
+F:\VS\Fiscode\obj\Debug\Gendeer_MarkupCompile.lref
+F:\VS\Fiscode\obj\Debug\MainWindow.baml
+F:\VS\Fiscode\obj\Debug\Gendeer.g.resources
+F:\VS\Fiscode\obj\Debug\Fiscode.Properties.Resources.resources
+F:\VS\Fiscode\obj\Debug\Fiscode.csproj.GenerateResource.cache
+F:\VS\Fiscode\obj\Debug\Fiscode.csproj.CoreCompileInputs.cache
+F:\VS\Fiscode\obj\Debug\Gendeer.exe
+F:\VS\Fiscode\obj\Debug\Gendeer.pdb

@@ -1,0 +1,48 @@
+﻿<Window x:Name="Form1" x:Class="Fiscode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:local="clr-namespace:Fiscode"
+        mc:Ignorable="d"
+        Title="Gendeer" Height="456" Width="821" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid x:Name="resGrid" HorizontalAlignment="Left" Height="62" Margin="62,357,0,0" VerticalAlignment="Top" Width="725">
+            <TextBox x:Name="resTBOX" HorizontalAlignment="Left" Height="40" Margin="10,0,0,0" Text="Gendeer" TextWrapping="Wrap" VerticalAlignment="Center" Width="438" IsEnabled="False" FontSize="24"/>
+            <Button x:Name="cpyBTN" Content="Copia" HorizontalAlignment="Left" Height="40" Margin="478,0,0,0" VerticalAlignment="Center" Width="68" Click="cpyBTN_Click"/>
+            <Label Content="Visual Laser 10 New" HorizontalAlignment="Left" Height="40" Margin="574,0,0,0" VerticalAlignment="Center" Width="141" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right"/>
+        </Grid>
+        <TabControl x:Name="menuTab" HorizontalAlignment="Left" Height="338" Margin="19,14,0,0" VerticalAlignment="Top" Width="768" UseLayoutRounding="False" FlowDirection="LeftToRight" TabStripPlacement="Left" IsSynchronizedWithCurrentItem="False">
+            <TabItem Header="Codice &#xD;&#xA;Fiscale" >
+                <Grid x:Name="CFGrid">
+                    <Label x:Name="nomeLBL" Content="Nome" HorizontalAlignment="Left" Height="25" Margin="21,44,0,0" VerticalAlignment="Top" Width="114" HorizontalContentAlignment="Right"/>
+                    <Label x:Name="cognLBL" Content="Cognome" HorizontalAlignment="Left" Height="25" Margin="21,93,0,0" VerticalAlignment="Top" Width="114" HorizontalContentAlignment="Right"/>
+                    <Label x:Name="dataLBL" Content="Data di nascita" HorizontalAlignment="Left" Height="26" Margin="366,143,0,0" VerticalAlignment="Top" Width="115" HorizontalContentAlignment="Right"/>
+                    <Label x:Name="provinciaLBL" Content="Comune di nascita" HorizontalAlignment="Left" Height="25" Margin="21,145,0,0" VerticalAlignment="Top" Width="114" HorizontalContentAlignment="Right"/>
+                    <Label x:Name="sessoLBL" Content="Sesso" HorizontalAlignment="Left" Height="25" Margin="366,44,0,0" VerticalAlignment="Top" Width="115" HorizontalContentAlignment="Right"/>
+                    <Button x:Name="calcFiscBTN" Content="Calcola" HorizontalAlignment="Left" Height="42" Margin="21,261,0,0" VerticalAlignment="Top" Width="98" Click="calcFiscBTN_Click"/>
+                    <TextBox x:Name="nomeTBOX" HorizontalAlignment="Left" Height="25" Margin="150,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+                    <TextBox x:Name="cognomeTBOX" HorizontalAlignment="Left" Height="25" Margin="150,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211"/>
+                    <ComboBox x:Name="sessoCombo" HorizontalAlignment="Left" Height="25" Margin="495,44,0,0" VerticalAlignment="Top" Width="111" SelectedIndex="0">
+                        <ComboBoxItem Content="M"/>
+                        <ComboBoxItem Content="F"/>
+                    </ComboBox>
+                    <DatePicker x:Name="dataPicker" HorizontalAlignment="Left" Height="25" Margin="495,145,0,0" VerticalAlignment="Top" Width="165" FirstDayOfWeek="Monday"/>
+                    <ListBox x:Name="provinceListB" HorizontalAlignment="Left" Height="128" Margin="150,145,0,0" VerticalAlignment="Top" Width="211" SelectedIndex="0" FontSize="11"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Partita &#xD;&#xA;IVA">
+
+                <Grid x:Name="PIGrid">
+                    <Label x:Name="matricolaLBL" Content="Codice matricola" HorizontalAlignment="Left" Height="25" Margin="21,44,0,0" VerticalAlignment="Top" Width="114" HorizontalContentAlignment="Right"/>
+                    <Label x:Name="uffprovLBL" Content="Ufficio provinciale" HorizontalAlignment="Left" Height="25" Margin="21,105,0,0" VerticalAlignment="Top" Width="114" HorizontalContentAlignment="Right"/>
+                    <Button x:Name="calcPIBTN" Content="Calcola" HorizontalAlignment="Left" Height="42" Margin="21,261,0,0" VerticalAlignment="Top" Width="98" Click="calcPIBTN_Click"/>
+                    <TextBox x:Name="matricolaTBOX" HorizontalAlignment="Left" Height="25" Margin="150,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" MaxLength="7"/>
+                    <ListBox x:Name="uffprovList" HorizontalAlignment="Left" Height="128" Margin="150,105,0,0" VerticalAlignment="Top" Width="211" SelectedIndex="0" FontSize="11"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
